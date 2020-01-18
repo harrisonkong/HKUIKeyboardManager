@@ -15,7 +15,6 @@ Pod::Spec.new do |s|
   s.homepage      = 'https://github.com/harrisonkong/HKUIKeyboardManager'
   s.source        = { :git => 'https://github.com/harrisonkong/HKUIKeyboardManager.git',
                       :tag => '1.0.0' }
-  s.dependency      'HKUIViewLengthCalculationBasis', '~> 1.0.0'
   s.dependency      'HKUIViewUtilities', '~> 1.0.0'
   s.framework     = 'UIKit'
   s.source_files  = 'HKUIKeyboardManager/**/*.swift'
