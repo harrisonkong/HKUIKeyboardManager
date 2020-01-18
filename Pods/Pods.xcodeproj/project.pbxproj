@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0627BB459F0EAC97AC9C90FA94E42EF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		084EEFF4B2D3923643E45AA094A980DC /* Pods-HKUIKeyboardManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D69AF3894BB6736D9F827BD8C30378 /* Pods-HKUIKeyboardManager-dummy.m */; };
+		34AAEF5623CE4BE25A3E90B8262ACC79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		4BD02919772B551E847AD1DBC4EB486D /* HKUIViewLengthCalculationBasis-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9D321DCD44C74DC9A1FD3308721E6A /* HKUIViewLengthCalculationBasis-dummy.m */; };
+		6B3E4698013E51C183EAC32B3CA13ED1 /* HKUIViewUtilities-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06618FD8E4F0E19F22606E09AF7DF95B /* HKUIViewUtilities-dummy.m */; };
+		80E81620518B136A9F287ACFC5F63392 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		8A45103492ECF71379AB34F7DF35A6BB /* Pods-HKUIKeyboardManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C7B85D5A8C629EBBC27E259136F379D /* Pods-HKUIKeyboardManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B0670AE5492A141759AB5D193190432 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		AF5E97433D7D1DB947CBFBB8A7E3D8AF /* UIView+HKUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CCD518ADF7FFD494B97C352387D836 /* UIView+HKUtilities.swift */; };
+		B81FBDC5EA356F9D9E9D25C4FF41F316 /* HKUIViewLengthCalculationBasis-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 746570BB0B287D89109D1EAB2BDF1F60 /* HKUIViewLengthCalculationBasis-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B88DF2EC1EFE87D7B597069D8DAB2272 /* HKUIViewUtilities-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE5DD84A9B38DA22B2662E4BFDEC0DF /* HKUIViewUtilities-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9DE3DF997ED7F25A34105DB779869B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		D0290227D7174C34A01EAE7472615248 /* UIView+LengthCalculationBasis.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF818171CC69441DE07BB38FB4754C00 /* UIView+LengthCalculationBasis.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24DB5B8E33FA098AA62AA948BCEB0F99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63F33DA0C4371EA2D8D9EB6338DD8861;
+			remoteInfo = HKUIViewUtilities;
+		};
+		F0E4518ED7C080A5154D9453AD3D167E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEE303B2FB3ECDEE8713166E7265ABAE;
+			remoteInfo = HKUIViewLengthCalculationBasis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06618FD8E4F0E19F22606E09AF7DF95B /* HKUIViewUtilities-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HKUIViewUtilities-dummy.m"; sourceTree = "<group>"; };
+		13B1BA581ED8906B29164F3EA03F3862 /* HKUIViewUtilities.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HKUIViewUtilities.modulemap; sourceTree = "<group>"; };
+		29CCD518ADF7FFD494B97C352387D836 /* UIView+HKUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+HKUtilities.swift"; path = "HKUIViewUtilities/UIView+HKUtilities.swift"; sourceTree = "<group>"; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3625F3030CC5939FF09B09781DCD4C22 /* Pods-HKUIKeyboardManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HKUIKeyboardManager.debug.xcconfig"; sourceTree = "<group>"; };
+		3C7B85D5A8C629EBBC27E259136F379D /* Pods-HKUIKeyboardManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HKUIKeyboardManager-umbrella.h"; sourceTree = "<group>"; };
+		3ED466FCFE189F41FE20EAC8B1793E71 /* Pods-HKUIKeyboardManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HKUIKeyboardManager-Info.plist"; sourceTree = "<group>"; };
+		402BE9EF35137115AAFC15467F61A1DA /* HKUIViewLengthCalculationBasis-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HKUIViewLengthCalculationBasis-Info.plist"; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		53EC807A5DFBB6A1B6C47D619A17D41C /* HKUIViewLengthCalculationBasis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HKUIViewLengthCalculationBasis.framework; path = HKUIViewLengthCalculationBasis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5898287FD12218F131029F5085527B33 /* Pods_HKUIKeyboardManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HKUIKeyboardManager.framework; path = "Pods-HKUIKeyboardManager.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		617F0D175225502DEB2B05C07E043DEB /* Pods-HKUIKeyboardManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HKUIKeyboardManager.modulemap"; sourceTree = "<group>"; };
+		62146A8D1F9541DA960E90FBF4E79040 /* Pods-HKUIKeyboardManager-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HKUIKeyboardManager-acknowledgements.markdown"; sourceTree = "<group>"; };
+		66FA5A77C27CF7E458B8E2A208C1BEE0 /* HKUIViewLengthCalculationBasis.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HKUIViewLengthCalculationBasis.xcconfig; sourceTree = "<group>"; };
+		6E8629CB9633E2703A565925109485DF /* HKUIViewLengthCalculationBasis-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HKUIViewLengthCalculationBasis-prefix.pch"; sourceTree = "<group>"; };
+		746570BB0B287D89109D1EAB2BDF1F60 /* HKUIViewLengthCalculationBasis-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HKUIViewLengthCalculationBasis-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A050D47E150B034C9B4D12F534D18854 /* HKUIViewUtilities.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HKUIViewUtilities.xcconfig; sourceTree = "<group>"; };
+		A4F91B6820E2ADAF66DACCB898CF560B /* Pods-HKUIKeyboardManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HKUIKeyboardManager.release.xcconfig"; sourceTree = "<group>"; };
+		A773BFDB9B648EF619F70BFDD18A7E03 /* Pods-HKUIKeyboardManager-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HKUIKeyboardManager-acknowledgements.plist"; sourceTree = "<group>"; };
+		CAE5DD84A9B38DA22B2662E4BFDEC0DF /* HKUIViewUtilities-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HKUIViewUtilities-umbrella.h"; sourceTree = "<group>"; };
+		CF818171CC69441DE07BB38FB4754C00 /* UIView+LengthCalculationBasis.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+LengthCalculationBasis.swift"; path = "HKUIViewLengthCalculationBasis/UIView+LengthCalculationBasis.swift"; sourceTree = "<group>"; };
+		CF9D321DCD44C74DC9A1FD3308721E6A /* HKUIViewLengthCalculationBasis-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HKUIViewLengthCalculationBasis-dummy.m"; sourceTree = "<group>"; };
+		D4D69AF3894BB6736D9F827BD8C30378 /* Pods-HKUIKeyboardManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HKUIKeyboardManager-dummy.m"; sourceTree = "<group>"; };
+		E6C3046E982013E98EE68B15635ADF22 /* HKUIViewLengthCalculationBasis.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HKUIViewLengthCalculationBasis.modulemap; sourceTree = "<group>"; };
+		E6DD478ED97792E124E66A228EE2547C /* HKUIViewUtilities-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HKUIViewUtilities-prefix.pch"; sourceTree = "<group>"; };
+		EA120E7F4D4323C8F0FCBFEE227F6759 /* HKUIViewUtilities-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HKUIViewUtilities-Info.plist"; sourceTree = "<group>"; };
+		FE2D1351F38A5F80ADBCB2A2247212C6 /* HKUIViewUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HKUIViewUtilities.framework; path = HKUIViewUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6460C1CDD6BA20DD8483ECF09A04DC1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34AAEF5623CE4BE25A3E90B8262ACC79 /* Foundation.framework in Frameworks */,
+				9B0670AE5492A141759AB5D193190432 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ED18CAA72212AE92BB1ADEB64BC6E9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0627BB459F0EAC97AC9C90FA94E42EF0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2194FE1C0A7C84BFB4CBA22CEDA4D10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E81620518B136A9F287ACFC5F63392 /* Foundation.framework in Frameworks */,
+				B9DE3DF997ED7F25A34105DB779869B4 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		048EA5C1DFE3A2955452BFA19F3D097D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD14B389C9B8E7EA6958514C2B9B3115 /* Pods-HKUIKeyboardManager */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1848E19314CA157CB3745EA60D198B2C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				13B1BA581ED8906B29164F3EA03F3862 /* HKUIViewUtilities.modulemap */,
+				A050D47E150B034C9B4D12F534D18854 /* HKUIViewUtilities.xcconfig */,
+				06618FD8E4F0E19F22606E09AF7DF95B /* HKUIViewUtilities-dummy.m */,
+				EA120E7F4D4323C8F0FCBFEE227F6759 /* HKUIViewUtilities-Info.plist */,
+				E6DD478ED97792E124E66A228EE2547C /* HKUIViewUtilities-prefix.pch */,
+				CAE5DD84A9B38DA22B2662E4BFDEC0DF /* HKUIViewUtilities-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HKUIViewUtilities";
+			sourceTree = "<group>";
+		};
+		18BD93673A8E9A0354024224D9B3D278 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53EC807A5DFBB6A1B6C47D619A17D41C /* HKUIViewLengthCalculationBasis.framework */,
+				FE2D1351F38A5F80ADBCB2A2247212C6 /* HKUIViewUtilities.framework */,
+				5898287FD12218F131029F5085527B33 /* Pods_HKUIKeyboardManager.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5121279931A395D705DB9D35FE0113B1 /* HKUIViewLengthCalculationBasis */ = {
+			isa = PBXGroup;
+			children = (
+				CF818171CC69441DE07BB38FB4754C00 /* UIView+LengthCalculationBasis.swift */,
+				E85BC835D184E616EFCFE6973AEEC4A6 /* Support Files */,
+			);
+			name = HKUIViewLengthCalculationBasis;
+			path = HKUIViewLengthCalculationBasis;
+			sourceTree = "<group>";
+		};
+		6986129E738F3D4C72DFE57E5651D9E1 /* HKUIViewUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				29CCD518ADF7FFD494B97C352387D836 /* UIView+HKUtilities.swift */,
+				1848E19314CA157CB3745EA60D198B2C /* Support Files */,
+			);
+			name = HKUIViewUtilities;
+			path = HKUIViewUtilities;
+			sourceTree = "<group>";
+		};
+		97C9992FCEB7C7A2404E75805CE9E2A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5121279931A395D705DB9D35FE0113B1 /* HKUIViewLengthCalculationBasis */,
+				6986129E738F3D4C72DFE57E5651D9E1 /* HKUIViewUtilities */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD14B389C9B8E7EA6958514C2B9B3115 /* Pods-HKUIKeyboardManager */ = {
+			isa = PBXGroup;
+			children = (
+				617F0D175225502DEB2B05C07E043DEB /* Pods-HKUIKeyboardManager.modulemap */,
+				62146A8D1F9541DA960E90FBF4E79040 /* Pods-HKUIKeyboardManager-acknowledgements.markdown */,
+				A773BFDB9B648EF619F70BFDD18A7E03 /* Pods-HKUIKeyboardManager-acknowledgements.plist */,
+				D4D69AF3894BB6736D9F827BD8C30378 /* Pods-HKUIKeyboardManager-dummy.m */,
+				3ED466FCFE189F41FE20EAC8B1793E71 /* Pods-HKUIKeyboardManager-Info.plist */,
+				3C7B85D5A8C629EBBC27E259136F379D /* Pods-HKUIKeyboardManager-umbrella.h */,
+				3625F3030CC5939FF09B09781DCD4C22 /* Pods-HKUIKeyboardManager.debug.xcconfig */,
+				A4F91B6820E2ADAF66DACCB898CF560B /* Pods-HKUIKeyboardManager.release.xcconfig */,
+			);
+			name = "Pods-HKUIKeyboardManager";
+			path = "Target Support Files/Pods-HKUIKeyboardManager";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				97C9992FCEB7C7A2404E75805CE9E2A5 /* Pods */,
+				18BD93673A8E9A0354024224D9B3D278 /* Products */,
+				048EA5C1DFE3A2955452BFA19F3D097D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E85BC835D184E616EFCFE6973AEEC4A6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6C3046E982013E98EE68B15635ADF22 /* HKUIViewLengthCalculationBasis.modulemap */,
+				66FA5A77C27CF7E458B8E2A208C1BEE0 /* HKUIViewLengthCalculationBasis.xcconfig */,
+				CF9D321DCD44C74DC9A1FD3308721E6A /* HKUIViewLengthCalculationBasis-dummy.m */,
+				402BE9EF35137115AAFC15467F61A1DA /* HKUIViewLengthCalculationBasis-Info.plist */,
+				6E8629CB9633E2703A565925109485DF /* HKUIViewLengthCalculationBasis-prefix.pch */,
+				746570BB0B287D89109D1EAB2BDF1F60 /* HKUIViewLengthCalculationBasis-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HKUIViewLengthCalculationBasis";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		315E7F899CEA94E6E70454DE7687C93D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B81FBDC5EA356F9D9E9D25C4FF41F316 /* HKUIViewLengthCalculationBasis-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		681435EC96078E7FC80D2FBB2DD9D6BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B88DF2EC1EFE87D7B597069D8DAB2272 /* HKUIViewUtilities-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7C2DDA556F8AAC71022D8072351D066 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A45103492ECF71379AB34F7DF35A6BB /* Pods-HKUIKeyboardManager-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		63F33DA0C4371EA2D8D9EB6338DD8861 /* HKUIViewUtilities */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA996AE28B00E842B3FAF883A736795F /* Build configuration list for PBXNativeTarget "HKUIViewUtilities" */;
+			buildPhases = (
+				681435EC96078E7FC80D2FBB2DD9D6BC /* Headers */,
+				B1570CE5CD9286BB84DC6B0C73CE6420 /* Sources */,
+				6460C1CDD6BA20DD8483ECF09A04DC1B /* Frameworks */,
+				4E899D404F246231685DFD294012D1A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HKUIViewUtilities;
+			productName = HKUIViewUtilities;
+			productReference = FE2D1351F38A5F80ADBCB2A2247212C6 /* HKUIViewUtilities.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C8E52570E14775C01AEE30ED8F88F300 /* Pods-HKUIKeyboardManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 969EA16A4F96333EA84E7A6A477F1A6E /* Build configuration list for PBXNativeTarget "Pods-HKUIKeyboardManager" */;
+			buildPhases = (
+				F7C2DDA556F8AAC71022D8072351D066 /* Headers */,
+				B6955EA01E3040E31475E2EDD31EB74B /* Sources */,
+				9ED18CAA72212AE92BB1ADEB64BC6E9C /* Frameworks */,
+				37CE0C3ADB4FEEFCA892CEC3AFC60FF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEC938C7D86CFE180AEED636897BAABE /* PBXTargetDependency */,
+				706C7FD38BCFAAF992C8BC8F6CE0B6C5 /* PBXTargetDependency */,
+			);
+			name = "Pods-HKUIKeyboardManager";
+			productName = "Pods-HKUIKeyboardManager";
+			productReference = 5898287FD12218F131029F5085527B33 /* Pods_HKUIKeyboardManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EEE303B2FB3ECDEE8713166E7265ABAE /* HKUIViewLengthCalculationBasis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D870D1BF230F934CF4FC7C1C7ABE51E2 /* Build configuration list for PBXNativeTarget "HKUIViewLengthCalculationBasis" */;
+			buildPhases = (
+				315E7F899CEA94E6E70454DE7687C93D /* Headers */,
+				0357DD2B4FD97B52B9F3E515559C56E5 /* Sources */,
+				B2194FE1C0A7C84BFB4CBA22CEDA4D10 /* Frameworks */,
+				6A58441543FDE187CEEEA2F79775FC21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HKUIViewLengthCalculationBasis;
+			productName = HKUIViewLengthCalculationBasis;
+			productReference = 53EC807A5DFBB6A1B6C47D619A17D41C /* HKUIViewLengthCalculationBasis.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 18BD93673A8E9A0354024224D9B3D278 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEE303B2FB3ECDEE8713166E7265ABAE /* HKUIViewLengthCalculationBasis */,
+				63F33DA0C4371EA2D8D9EB6338DD8861 /* HKUIViewUtilities */,
+				C8E52570E14775C01AEE30ED8F88F300 /* Pods-HKUIKeyboardManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37CE0C3ADB4FEEFCA892CEC3AFC60FF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E899D404F246231685DFD294012D1A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A58441543FDE187CEEEA2F79775FC21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0357DD2B4FD97B52B9F3E515559C56E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD02919772B551E847AD1DBC4EB486D /* HKUIViewLengthCalculationBasis-dummy.m in Sources */,
+				D0290227D7174C34A01EAE7472615248 /* UIView+LengthCalculationBasis.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1570CE5CD9286BB84DC6B0C73CE6420 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B3E4698013E51C183EAC32B3CA13ED1 /* HKUIViewUtilities-dummy.m in Sources */,
+				AF5E97433D7D1DB947CBFBB8A7E3D8AF /* UIView+HKUtilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6955EA01E3040E31475E2EDD31EB74B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				084EEFF4B2D3923643E45AA094A980DC /* Pods-HKUIKeyboardManager-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		706C7FD38BCFAAF992C8BC8F6CE0B6C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HKUIViewUtilities;
+			target = 63F33DA0C4371EA2D8D9EB6338DD8861 /* HKUIViewUtilities */;
+			targetProxy = 24DB5B8E33FA098AA62AA948BCEB0F99 /* PBXContainerItemProxy */;
+		};
+		BEC938C7D86CFE180AEED636897BAABE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HKUIViewLengthCalculationBasis;
+			target = EEE303B2FB3ECDEE8713166E7265ABAE /* HKUIViewLengthCalculationBasis */;
+			targetProxy = F0E4518ED7C080A5154D9453AD3D167E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		126615B7BFC296075D9C705533AF7050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A050D47E150B034C9B4D12F534D18854 /* HKUIViewUtilities.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HKUIViewUtilities/HKUIViewUtilities-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HKUIViewUtilities/HKUIViewUtilities-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/HKUIViewUtilities/HKUIViewUtilities.modulemap";
+				PRODUCT_MODULE_NAME = HKUIViewUtilities;
+				PRODUCT_NAME = HKUIViewUtilities;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		206349958DC5CBB743AA02DD6B8F30EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3625F3030CC5939FF09B09781DCD4C22 /* Pods-HKUIKeyboardManager.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HKUIKeyboardManager/Pods-HKUIKeyboardManager-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HKUIKeyboardManager/Pods-HKUIKeyboardManager.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		50C52A0168D9665CFED26891131AC0DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4F91B6820E2ADAF66DACCB898CF560B /* Pods-HKUIKeyboardManager.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HKUIKeyboardManager/Pods-HKUIKeyboardManager-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HKUIKeyboardManager/Pods-HKUIKeyboardManager.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9B00FC68DC75A6DE3ED032AA52A2818C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A050D47E150B034C9B4D12F534D18854 /* HKUIViewUtilities.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HKUIViewUtilities/HKUIViewUtilities-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HKUIViewUtilities/HKUIViewUtilities-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/HKUIViewUtilities/HKUIViewUtilities.modulemap";
+				PRODUCT_MODULE_NAME = HKUIViewUtilities;
+				PRODUCT_NAME = HKUIViewUtilities;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BFAB7C9AA9CD994B8B89AE27CE7B994B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66FA5A77C27CF7E458B8E2A208C1BEE0 /* HKUIViewLengthCalculationBasis.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HKUIViewLengthCalculationBasis/HKUIViewLengthCalculationBasis-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HKUIViewLengthCalculationBasis/HKUIViewLengthCalculationBasis-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/HKUIViewLengthCalculationBasis/HKUIViewLengthCalculationBasis.modulemap";
+				PRODUCT_MODULE_NAME = HKUIViewLengthCalculationBasis;
+				PRODUCT_NAME = HKUIViewLengthCalculationBasis;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C609F9CAAFC2FD23A43415EFCB60F05F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66FA5A77C27CF7E458B8E2A208C1BEE0 /* HKUIViewLengthCalculationBasis.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HKUIViewLengthCalculationBasis/HKUIViewLengthCalculationBasis-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HKUIViewLengthCalculationBasis/HKUIViewLengthCalculationBasis-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/HKUIViewLengthCalculationBasis/HKUIViewLengthCalculationBasis.modulemap";
+				PRODUCT_MODULE_NAME = HKUIViewLengthCalculationBasis;
+				PRODUCT_NAME = HKUIViewLengthCalculationBasis;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		969EA16A4F96333EA84E7A6A477F1A6E /* Build configuration list for PBXNativeTarget "Pods-HKUIKeyboardManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				206349958DC5CBB743AA02DD6B8F30EB /* Debug */,
+				50C52A0168D9665CFED26891131AC0DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA996AE28B00E842B3FAF883A736795F /* Build configuration list for PBXNativeTarget "HKUIViewUtilities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B00FC68DC75A6DE3ED032AA52A2818C /* Debug */,
+				126615B7BFC296075D9C705533AF7050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D870D1BF230F934CF4FC7C1C7ABE51E2 /* Build configuration list for PBXNativeTarget "HKUIViewLengthCalculationBasis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFAB7C9AA9CD994B8B89AE27CE7B994B /* Debug */,
+				C609F9CAAFC2FD23A43415EFCB60F05F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
