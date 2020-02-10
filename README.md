@@ -22,13 +22,11 @@ Showing and hiding the on-screen keyboard is always a headache in mobile applica
 
 This keyboard manager will come to your rescue and provide many options to customize how its function. Only a few lines of code will saves you hours of work in every project that uses text input. It also provides a few bonus functions.
 
-To see it in action and play with its options, head to https://github.com/harrisonkong/HKUIKeyboardManagerDemo for a demo application.
+To see it in action and play with its options, head to https://github.com/harrisonkong/HKUIKeyboardManagerDemo for this demo application.
 
 <img src='https://github.com/harrisonkong/HKUIKeyboardManager/blob/master/s1.jpg' width="200" /> <img src='https://github.com/harrisonkong/HKUIKeyboardManager/blob/master/s2.jpg' width="200" /> <img src='https://github.com/harrisonkong/HKUIKeyboardManager/blob/master/s3.jpg' width="200" />
 
-## HOW TO USE IT ##
-
-The diagrams here explain how it works.
+The following diagrams here explain how it works.
 
 There are two classes, `HKUIKeyboardManager` is for `UIView` that do not scroll. For this version, it simply hides and shows the keyboard.
 
@@ -42,62 +40,70 @@ It works by keeping track of a list of UITextFields or UITextViews (or their des
 
 In addition, for the scrollView version, it also has an option (default is enabled) to scroll the active text field into the optimal view when it is tapped.
 
-## INSTALLATION
+<img src="./docs/cloudline.png" alt="---line---">
 
-The best way is to use CocoaPod. Here is a sample Podfile:
+## HOW TO INSTALL IT ##
 
+Use one of the following methods:
 
-  platform :ios, '13.0'
+### 1. Using CocoaPod ###
 
-  target 'MyTargetName' do
-
-    use_frameworks!
-
-    # some other pods that your project need...
-
-    pod 'HKUIKeyboardManager', '~> 1.0.0'
-
-  end
-
-
-Alternatively, you can just include this files in your project:
+The module is avabilable via CocoaPods Trunk. Below is an example podfile. If you already use a podfile for your project, all you have to do is add the line that specifies `HKUIButton`. The other dependencies will also be automatically installed in the xcworkspace.
 
 ```
-  HKUIKeyboardManager.swift
-  HKUIKeyboardManagerScrollable.swift
-  UIView+HKUtilities.swift
-```
+platform :ios, '13.0'
 
-## USAGE
+target 'MyTarget' do
+
+  use_frameworks!
+
+  pod 'HKUIKeyboardManager', '~> 1.0.0'
+  # other pods for your project
+
+end
+```
 
 Don't forget to import it first if you are using the CocoaPod option:
 
 ```
-  import HKUIKeyboardManager
+import HKUIKeyboardManager
 ```
+
+### 2. BY INCLUDING THE SOURCE FILES ###
+
+You can also simply include the following source files in your project:
+
+```
+HKUIKeyboardManager.swift
+HKUIKeyboardManagerScrollable.swift
+UIView+HKUtilities.swift
+```
+<img src="./docs/cloudline.png" alt="---line---">
+
+## HOW TO USE IT ##
 
 ### 1. Initialize and register text fields ###
     
 ```
  
-       let kbManager : HKUIKeyboardManagerScrollable?
-       .
-       .
-       .
- 
-       override func viewDidLoad() {
-         super.viewDidLoad()
-   
-           // code ...
+let kbManager : HKUIKeyboardManagerScrollable?
+.
+.
+.
 
-           kbManager = HKUIKeyboardManager.init(ownerView: scrollView, outermostView: view)
-   
-           kbManager?.registerEditableField(nameTextField)
-           kbManager?.registerEditableField(addressTextField)
- 
-          // more code ...
-          
-        }
+override func viewDidLoad() {
+ super.viewDidLoad()
+
+   // code ...
+
+   kbManager = HKUIKeyboardManager.init(ownerView: scrollView, outermostView: view)
+
+   kbManager?.registerEditableField(nameTextField)
+   kbManager?.registerEditableField(addressTextField)
+
+  // more code ...
+
+}
         
 ```
 
@@ -106,39 +112,39 @@ Don't forget to import it first if you are using the CocoaPod option:
 ### 2. Call from the overridden prepare if you want to hide the keyboard when seguing to another screen (dismissDuringSegue == true) ###
   
 ```
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     
-            // some code ...
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
-            KBManager?.preparingSegue()
-  
-           // some other code ...
-       }
+    // some code ...
+
+    KBManager?.preparingSegue()
+
+   // some other code ...
+}
 
 ```
 
 ### 3. Call from the overridden viewWillTransition if you want to hide the keyboard during device rotation (dismissDuringDeviceRotation == true) ###
 
 ```
-       override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-   
-          super.viewWillTransition(to: size, with: coordinator)
-   
-          // do whatever ...
-   
-          KBManager?.viewWillTransition()
-       }
+override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+
+  super.viewWillTransition(to: size, with: coordinator)
+
+  // do whatever ...
+
+  KBManager?.viewWillTransition()
+}
 ```
 
 ### 4. If you would like the keyboard to be dismissed upon custom gestures, register your own custom gesture recognizers. You can add additional action targets for these gesture recognizers but do not add them to any views or assign delegates to them. The keyboard manager will handle that. ###
     
 ```
-         .
-         .
-       tripleTapRecognizer.addTarget(self, action: #selector(handle3Taps(_:)))
-       KBManager?.registerCustomGestureRecognizer(tripleTapRecognizer)
-         .
-         .
+ .
+ .
+tripleTapRecognizer.addTarget(self, action: #selector(handle3Taps(_:)))
+KBManager?.registerCustomGestureRecognizer(tripleTapRecognizer)
+ .
+ .
        
 ```
  
@@ -197,10 +203,16 @@ Don't forget to import it first if you are using the CocoaPod option:
                                               simply be scrolled down so that
                                               its top is just under the top of
                                               the screen with a small margin.
-                                              
-## CUSTOMIZATION
+                               
+<img src="./docs/cloudline.png" alt="---line---">
+
+## TO CUSTOMIZE IT ##
 
 If you are interested in modifying the code, please read the development notes in a separate file for issues that you should be aware of.
 
+<img src="./docs/cloudline.png" alt="---line---">
 
+## KNOWN ISSUES ##
+
+There are no known issues currently.
      
