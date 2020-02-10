@@ -24,17 +24,17 @@ This keyboard manager will come to your rescue and provide many options to custo
 
 To see it in action and play with its options, head to https://github.com/harrisonkong/HKUIKeyboardManagerDemo for this demo application.
 
-<img src='https://github.com/harrisonkong/HKUIKeyboardManager/blob/master/s1.jpg' width="200" /> <img src='https://github.com/harrisonkong/HKUIKeyboardManager/blob/master/s2.jpg' width="200" /> <img src='https://github.com/harrisonkong/HKUIKeyboardManager/blob/master/s3.jpg' width="200" />
+<img src='./docs/s1.jpg' width="200" /> <img src='./docs/s2.jpg' width="200" /> <img src='./docs/s3.jpg' width="200" />
 
 The following diagrams here explain how it works.
 
 There are two classes, `HKUIKeyboardManager` is for `UIView` that do not scroll. For this version, it simply hides and shows the keyboard.
 
-<img src='https://github.com/harrisonkong/HKUIKeyboardManager/blob/master/d1.jpg' width="500" />
+<img src='./docs/d1.jpg' width="500" />
 
 Another one `HKUIKeyboardManagerScrollable` is for `UIScrollView` and descendants such as `UICollectionView` and `UITableView`. For this verison, it is also capable or scrolling the active text field into better view as well as adding inset to the content behind it so that the user can scroll to what's behind the keyboard.
 
-<img src='https://github.com/harrisonkong/HKUIKeyboardManager/blob/master/d2.jpg' width="500" />
+<img src='./docs/d2.jpg' width="500" />
 
 It works by keeping track of a list of UITextFields or UITextViews (or their descendants) that you register with it. And it also use a few gesture recognizers to capture taps and other gestures (They do not interfere with other gesture recognizers that you might need to use in your code). It is then able to tell all the editable fields to end editing when taps are detected outside of any text fields and views, resulting in hiding of the keyboard. Hitting the enter key on single line text fields (UITextFields) will also hide the keyboard.
 
