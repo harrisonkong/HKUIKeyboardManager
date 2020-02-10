@@ -24,7 +24,7 @@ Showing and hiding the on-screen keyboard is always a headache in mobile applica
 
 This keyboard manager will come to your rescue and provide many options to customize how its function. Only a few lines of code will saves you hours of work in every project that uses text input. It also provides a few bonus functions.
 
-To see it in action and play with its options, head to https://github.com/harrisonkong/HKUIKeyboardManagerDemo for this demo application.
+To see it in action and play with its options, head to https://github.com/harrisonkong/HKKBMDemo for this demo application.
 
 <img src='./docs/s1.jpg' width="200" /> <img src='./docs/s2.jpg' width="200" /> <img src='./docs/s3.jpg' width="200" />
 
