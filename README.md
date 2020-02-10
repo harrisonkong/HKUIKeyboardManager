@@ -2,6 +2,8 @@
 ![Swift](https://img.shields.io/static/v1?label=Swift&message=5.0%20or%20above&color=%23FF4400&style=plastic) ![iOS](https://img.shields.io/static/v1?label=iOS&&message=13.0%20or%20above&color=yellow&style=plastic) ![CocoaPod](https://img.shields.io/static/v1?label=pod&message=1.0.0&color=brightgreen&style=plastic) ![License](https://img.shields.io/static/v1?label=license&message=MIT&color=blue&style=plastic) ![Category](https://img.shields.io/static/v1?label=category&message=User%20Interface&color=blueviolet&style=plastic)
 #### Harrison Kong's UI Keyboard Manager ####
 
+<img src="./docs/HKUIKeyboardManager.png" alt="HKUIKeyboardManager">
+
 <img src="./docs/cloudline.png" alt="---line---">
 
 ## VERSION HISTORY ##
