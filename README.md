@@ -50,7 +50,7 @@ Use one of the following methods:
 
 ### 1. Using CocoaPod ###
 
-The module is avabilable via CocoaPods Trunk. Below is an example podfile. If you already use a podfile for your project, all you have to do is add the line that specifies `HKUIButton`. The other dependencies will also be automatically installed in the xcworkspace.
+The module is avabilable via CocoaPods Trunk. Below is an example podfile. If you already use a podfile for your project, all you have to do is add the line that specifies `HKUIKeyboardManager`. The other dependencies will also be automatically installed in the xcworkspace.
 
 ```
 platform :ios, '13.0'
@@ -210,7 +210,7 @@ KBManager?.registerCustomGestureRecognizer(tripleTapRecognizer)
 
 ## TO CUSTOMIZE IT ##
 
-If you are interested in modifying the code, please read the development notes in a separate file for issues that you should be aware of.
+If you are interested in modifying the code, please read the [development notes](Development%20Notes.md) in a separate file for issues that you should be aware of.
 
 <img src="./docs/cloudline.png" alt="---line---">
 
