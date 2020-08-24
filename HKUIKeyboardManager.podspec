@@ -9,12 +9,12 @@ Pod::Spec.new do |s|
   s.name          = 'HKUIKeyboardManager'
   s.summary       = 'HK Keyboard Manager'
   s.requires_arc  = true
-  s.version       = '1.0.0'
+  s.version       = '1.1.0'
   s.license       = { :type => 'MIT' }
   s.author        = { 'Harrison Kong' => 'harrisonkong@skyroute66.com' }
   s.homepage      = 'https://github.com/harrisonkong/HKUIKeyboardManager'
   s.source        = { :git => 'https://github.com/harrisonkong/HKUIKeyboardManager.git',
-                      :tag => '1.0.0' }
+                      :tag => '1.1.0' }
   s.dependency      'HKUIViewUtilities', '~> 1.0.0'
   s.framework     = 'UIKit'
   s.source_files  = 'HKUIKeyboardManager/**/*.swift'

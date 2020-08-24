@@ -9,6 +9,7 @@
 ## VERSION HISTORY ##
 
 1.0.0 - 2020/01/18 - Initial release
+
 1.1.0 - 2020/08/24 - add unregisterEditableField( ) and documentation update
 
 ## MINIMUM REQUIREMENTS ##
@@ -20,6 +21,16 @@
 <img src="./docs/cloudline.png" alt="---line---">
 
 ## WHAT IS IT? ##
+
+### Available Features (customizable): ###
+
+- Automatically hide the on-screen keyboard when user tap outside of the designated text fields / text areas
+- Automatically hide the on-screen keyboard when user tap ENTER key on the on-screen keyboard
+- Automatically hide the on-screen keyboard on any of these gestures outside of the designated text fields / text areas : tap, pinch, pan, rotate
+- Automatically hide the on-screen keyboard on device rotation
+- Automatically hide the on-screen keyboard when another view is opened by a segue
+- On scrollable views: automatically lengthen the content size of the view to accomodate the height of the on-screen keyboard so the lowest portion does not get hidden by the keyboard
+- On scrollable views: scroll the designated text fields / text areas into view when they are tapped on. This feature ensures that the top of the text field / text area is visible, not just the bottom of it
 
 Showing and hiding the on-screen keyboard is always a headache in mobile application development. So much code and they are all over different places in the project. And you have to do it in every project.
 
@@ -112,8 +123,8 @@ override func viewDidLoad() {
 
 (Optional Steps:)
 
-###2.  Unregister text fields or text views that you do not want to include
-    or those that you are about to destroy:
+### 2.  Unregister text fields or text views that you do not want to include or those that you are about to destroy: ###
+    
 ```
     kbManager?.unregisterEditableField(nameTextField)
 ```
