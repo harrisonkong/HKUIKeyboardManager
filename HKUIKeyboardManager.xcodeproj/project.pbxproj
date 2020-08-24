@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		94651576CF56F92D69784644 /* Pods_HKUIKeyboardManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74E164099A56BDF0C920E0E /* Pods_HKUIKeyboardManager.framework */; };
+		C1E93EE91E7B322933C79F44 /* Pods_HKUIKeyboardManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB55E66FDBAD28FC95BEC4C /* Pods_HKUIKeyboardManager.framework */; };
 		C950023C23D315720065DB88 /* HKUIKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C950023A23D315720065DB88 /* HKUIKeyboardManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C950024423D315C70065DB88 /* HKUIKeyboardManagerScrollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C950024223D315C70065DB88 /* HKUIKeyboardManagerScrollable.swift */; };
 		C950024523D315C70065DB88 /* HKUIKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C950024323D315C70065DB88 /* HKUIKeyboardManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		014F317D512C0CA42B703DC5 /* Pods-HKUIKeyboardManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKUIKeyboardManager.release.xcconfig"; path = "Target Support Files/Pods-HKUIKeyboardManager/Pods-HKUIKeyboardManager.release.xcconfig"; sourceTree = "<group>"; };
+		1EB55E66FDBAD28FC95BEC4C /* Pods_HKUIKeyboardManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HKUIKeyboardManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7832E689D440B92336681A1F /* Pods-HKUIKeyboardManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKUIKeyboardManager.debug.xcconfig"; path = "Target Support Files/Pods-HKUIKeyboardManager/Pods-HKUIKeyboardManager.debug.xcconfig"; sourceTree = "<group>"; };
 		C950023723D315720065DB88 /* HKUIKeyboardManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HKUIKeyboardManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C950023A23D315720065DB88 /* HKUIKeyboardManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKUIKeyboardManager.h; sourceTree = "<group>"; };
 		C950023B23D315720065DB88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C950024223D315C70065DB88 /* HKUIKeyboardManagerScrollable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKUIKeyboardManagerScrollable.swift; sourceTree = "<group>"; };
 		C950024323D315C70065DB88 /* HKUIKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKUIKeyboardManager.swift; sourceTree = "<group>"; };
-		EC69302885BD98DCB3634270 /* Pods-HKUIKeyboardManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKUIKeyboardManager.debug.xcconfig"; path = "Target Support Files/Pods-HKUIKeyboardManager/Pods-HKUIKeyboardManager.debug.xcconfig"; sourceTree = "<group>"; };
-		F74E164099A56BDF0C920E0E /* Pods_HKUIKeyboardManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HKUIKeyboardManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2438BE660F72AD9B963CE2C /* Pods-HKUIKeyboardManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKUIKeyboardManager.release.xcconfig"; path = "Target Support Files/Pods-HKUIKeyboardManager/Pods-HKUIKeyboardManager.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,28 +29,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94651576CF56F92D69784644 /* Pods_HKUIKeyboardManager.framework in Frameworks */,
+				C1E93EE91E7B322933C79F44 /* Pods_HKUIKeyboardManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		226DEF9BE1CF0584C88AE7BB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F74E164099A56BDF0C920E0E /* Pods_HKUIKeyboardManager.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		588F3E89E087759512C41261 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EC69302885BD98DCB3634270 /* Pods-HKUIKeyboardManager.debug.xcconfig */,
-				014F317D512C0CA42B703DC5 /* Pods-HKUIKeyboardManager.release.xcconfig */,
+				7832E689D440B92336681A1F /* Pods-HKUIKeyboardManager.debug.xcconfig */,
+				F2438BE660F72AD9B963CE2C /* Pods-HKUIKeyboardManager.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		8B84743DFA60D5738A778D54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EB55E66FDBAD28FC95BEC4C /* Pods_HKUIKeyboardManager.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C950022D23D315720065DB88 = {
@@ -59,7 +59,7 @@
 				C950023923D315720065DB88 /* HKUIKeyboardManager */,
 				C950023823D315720065DB88 /* Products */,
 				588F3E89E087759512C41261 /* Pods */,
-				226DEF9BE1CF0584C88AE7BB /* Frameworks */,
+				8B84743DFA60D5738A778D54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,7 +100,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C950023F23D315720065DB88 /* Build configuration list for PBXNativeTarget "HKUIKeyboardManager" */;
 			buildPhases = (
-				ADB5CB85E215509205FFB7B9 /* [CP] Check Pods Manifest.lock */,
+				17DCE81C8FCB9E719CAC6E0F /* [CP] Check Pods Manifest.lock */,
 				C950023223D315720065DB88 /* Headers */,
 				C950023323D315720065DB88 /* Sources */,
 				C950023423D315720065DB88 /* Frameworks */,
@@ -159,7 +159,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		ADB5CB85E215509205FFB7B9 /* [CP] Check Pods Manifest.lock */ = {
+		17DCE81C8FCB9E719CAC6E0F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -318,7 +318,7 @@
 		};
 		C950024023D315720065DB88 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC69302885BD98DCB3634270 /* Pods-HKUIKeyboardManager.debug.xcconfig */;
+			baseConfigurationReference = 7832E689D440B92336681A1F /* Pods-HKUIKeyboardManager.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -348,7 +348,7 @@
 		};
 		C950024123D315720065DB88 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 014F317D512C0CA42B703DC5 /* Pods-HKUIKeyboardManager.release.xcconfig */;
+			baseConfigurationReference = F2438BE660F72AD9B963CE2C /* Pods-HKUIKeyboardManager.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;

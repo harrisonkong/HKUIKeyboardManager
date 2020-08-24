@@ -1,20 +1,16 @@
 PODS:
-  - HKUIViewLengthCalculationBasis (1.0.0)
   - HKUIViewUtilities (1.0.0)
 
 DEPENDENCIES:
-  - HKUIViewLengthCalculationBasis (~> 1.0.0)
   - HKUIViewUtilities (~> 1.0.0)
 
 SPEC REPOS:
   trunk:
-    - HKUIViewLengthCalculationBasis
     - HKUIViewUtilities
 
 SPEC CHECKSUMS:
-  HKUIViewLengthCalculationBasis: b4b1b13e203ae0aa303b109b22416601ca1fc687
   HKUIViewUtilities: fde58cfef72c916510ed32d6622d587ed79992d3
 
-PODFILE CHECKSUM: 392b83fd726aed820b5ee44d289446567562e8d2
+PODFILE CHECKSUM: 6de829423205ea5af666b059f0523a83feb7a93e
 
 COCOAPODS: 1.8.4

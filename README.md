@@ -1,5 +1,5 @@
 # <img src="./docs/logo256.jpg" width="40" height="40" alt="skyRoute66 logo" style="vertical-align:middle"> HKUIKeyboardManager #
-![Swift](https://img.shields.io/static/v1?label=Swift&message=5.0%20or%20above&color=%23FF4400&style=plastic) ![iOS](https://img.shields.io/static/v1?label=iOS&&message=13.0%20or%20above&color=yellow&style=plastic) ![CocoaPod](https://img.shields.io/static/v1?label=pod&message=1.0.0&color=brightgreen&style=plastic) ![License](https://img.shields.io/static/v1?label=license&message=MIT&color=blue&style=plastic) ![Category](https://img.shields.io/static/v1?label=category&message=User%20Interface&color=blueviolet&style=plastic)
+![Swift](https://img.shields.io/static/v1?label=Swift&message=5.0%20or%20above&color=%23FF4400&style=plastic) ![iOS](https://img.shields.io/static/v1?label=iOS&&message=13.0%20or%20above&color=yellow&style=plastic) ![CocoaPod](https://img.shields.io/static/v1?label=pod&message=1.1.0&color=brightgreen&style=plastic) ![License](https://img.shields.io/static/v1?label=license&message=MIT&color=blue&style=plastic) ![Category](https://img.shields.io/static/v1?label=category&message=User%20Interface&color=blueviolet&style=plastic)
 #### Harrison Kong's UI Keyboard Manager ####
 
 <img src="./docs/HKUIKeyboardManager.png" alt="HKUIKeyboardManager">
@@ -9,6 +9,7 @@
 ## VERSION HISTORY ##
 
 1.0.0 - 2020/01/18 - Initial release
+1.1.0 - 2020/08/24 - add unregisterEditableField( ) and documentation update
 
 ## MINIMUM REQUIREMENTS ##
 
@@ -85,10 +86,10 @@ UIView+HKUtilities.swift
 ## HOW TO USE IT ##
 
 ### 1. Initialize and register text fields ###
-    
+
 ```
- 
-let kbManager : HKUIKeyboardManagerScrollable?
+
+var kbManager : HKUIKeyboardManagerScrollable?
 .
 .
 .
@@ -106,26 +107,32 @@ override func viewDidLoad() {
   // more code ...
 
 }
-        
+
 ```
 
 (Optional Steps:)
- 
-### 2. Call from the overridden prepare if you want to hide the keyboard when seguing to another screen (dismissDuringSegue == true) ###
-  
+
+###2.  Unregister text fields or text views that you do not want to include
+    or those that you are about to destroy:
+```
+    kbManager?.unregisterEditableField(nameTextField)
+```
+
+### 3. Call from the overridden prepare if you want to hide the keyboard when seguing to another screen (dismissDuringSegue == true) ###
+
 ```
 override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
     // some code ...
 
-    KBManager?.preparingSegue()
+    kbManager?.preparingSegue()
 
    // some other code ...
 }
 
 ```
 
-### 3. Call from the overridden viewWillTransition if you want to hide the keyboard during device rotation (dismissDuringDeviceRotation == true) ###
+### 4. Call from the overridden viewWillTransition if you want to hide the keyboard during device rotation (dismissDuringDeviceRotation == true) ###
 
 ```
 override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -134,35 +141,35 @@ override func viewWillTransition(to size: CGSize, with coordinator: UIViewContro
 
   // do whatever ...
 
-  KBManager?.viewWillTransition()
+  kbManager?.viewWillTransition()
 }
 ```
 
-### 4. If you would like the keyboard to be dismissed upon custom gestures, register your own custom gesture recognizers. You can add additional action targets for these gesture recognizers but do not add them to any views or assign delegates to them. The keyboard manager will handle that. ###
-    
+### 5. If you would like the keyboard to be dismissed upon custom gestures, register your own custom gesture recognizers. You can add additional action targets for these gesture recognizers but do not add them to any views or assign delegates to them. The keyboard manager will handle that. ###
+
 ```
  .
  .
 tripleTapRecognizer.addTarget(self, action: #selector(handle3Taps(_:)))
-KBManager?.registerCustomGestureRecognizer(tripleTapRecognizer)
+kbManager?.registerCustomGestureRecognizer(tripleTapRecognizer)
  .
  .
-       
+
 ```
- 
-### 5. Change other user options as needed: ###
+
+### 6. Change other user options as needed: ###
 
       option                      default     meaning for true
       ______________________________________________________________________
- 
+
       dismissOnTapGestures        true        if taps are detected outside
                                               of keyboard and not in text
                                               fields, keyboard will dismiss
- 
+
       dismissOnPanGestures        true        if pans are detected outside
                                               of keyboard and not in text
                                               fields, keyboard will dismiss
- 
+
                                   false       (set to false by default for
                                               HKUIKeyboardManagerScrollable to
                                               allow scrolling)
@@ -170,11 +177,11 @@ KBManager?.registerCustomGestureRecognizer(tripleTapRecognizer)
       dismissOnPinchGestures      true        if pinches are detected outside
                                               of keyboard and not in text
                                               fields, keyboard will dismiss
- 
+
       dismissOnRotationGestures   true        if rotation gestures are detected
                                               outside of keyboard and not in
                                               text fields, keyboard will dismiss
- 
+
       dismissDuringSegue          true        dismiss the keyboard when a segue
                                               is being prepared, only set to
                                               false if the view does not rotate.
@@ -182,7 +189,7 @@ KBManager?.registerCustomGestureRecognizer(tripleTapRecognizer)
                                               to true if the view rotates and
                                               this is set to false.
                                               See development notes.
- 
+
       dismissDuringDeviceRotation true        dismiss the keyboard when the
                                               device is rotated, only set to
                                               false if the view does not segue
@@ -191,21 +198,21 @@ KBManager?.registerCustomGestureRecognizer(tripleTapRecognizer)
                                               to true if a segue is prepared and
                                               this is set to false.
                                               See development notes.
- 
+
       keepActiveFieldInViews      true        (HKUIKeyboardManagerScrollable
                                               only)
                                               if the active text field is
                                               obscured by the keyboard when it
                                               first receive focus, it will be
                                               scrolled to above the keyboard
-                                              
+
                                               but if doing so will cause the
                                               top of the field to extend above
                                               the top of the screen, it will
                                               simply be scrolled down so that
                                               its top is just under the top of
                                               the screen with a small margin.
-                               
+
 <img src="./docs/cloudline.png" alt="---line---">
 
 ## TO CUSTOMIZE IT ##
@@ -217,4 +224,3 @@ If you are interested in modifying the code, please read the [development notes]
 ## KNOWN ISSUES ##
 
 There are no known issues currently.
-     
